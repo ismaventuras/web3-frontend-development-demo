@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send me your ether plz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <p id="title">plain js window.ethereum demo</p>
+        <div class="mainContainer">
+            <button type="button" id="metamaskButton">Connect Metamask</button>
+            <p id="connectError"></p>
+            <div class="infoContainer">
+                <div id="accountContainer">
+                    <p>Account: </p>
+                    <span id="accountSpan">-</span>
+                </div>
+                <div>
+                    <p>Chain</p>
+                    <span id="currentChain">-</span>
+                </div>
+                <div>
+                    <p>Block</p>
+                    <span id="currentBlockSpan">-</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balanceSpan">-</span>
+                </div>
+            </div>    
+            <div class="switchChainContainer">
+                <div>
+                    <button id="switchToEthereum">Switch to Ethereum</button>
+                    <button id="switchToMoonbaseAlpha">Add and switch to MoonbaseAlpha</button>                    
+                </div>                          
+                <p id="switchToEthereumError"></p>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+
+</html>

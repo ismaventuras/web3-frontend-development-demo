@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+#title {
+    text-align: center;
+    margin: 1rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;    
+    flex-direction: column;
+}
+
+.mainContainer{
+    display: flex;
+    
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.switchChainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+button{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;    
+}
+#switchToEthereumError{
+    flex:1;    
+    text-align: center;
+}
+
+#connectError, #switchToEthereumError{    
+    color: red;
+}
+#accountSpan{
+    word-break: break-all;
+}
+
+
+
+
+.infoContainer{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#accountContainer{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px)  {
+    main{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
